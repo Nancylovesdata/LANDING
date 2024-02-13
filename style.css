@@ -24,6 +24,8 @@ body {
 
 }
 
+
+
 ul {
   display: flex;
   justify-content: center;
@@ -39,7 +41,7 @@ li {
 a {
   font-size: 30px;
   text-decoration: none;
-  color: chocolate;
+  color: white;
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -61,7 +63,7 @@ border-bottom: 2px solid blueviolet;
 .icon{
   font-family: cursive;
   font-weight: bold;
-  color:burlywood ;
+  color:white ;
 }
 
 .btn {
@@ -98,7 +100,7 @@ border-bottom: 2px solid blueviolet;
 
 .span{
  font-family: cursive;
- color: blueviolet;
+ color: white;
  font-size: 34px;
  font-weight: 700;
 }
@@ -179,3 +181,62 @@ text-align: center;
 margin: auto;
 
 }
+
+
+
+.product-items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 23px;
+    grid-row-gap: 19px;
+    }
+
+    .products{
+      padding: 120px 30px;
+      text-align: center;
+      margin: auto;
+      
+      }
+      
+
+      /* .styled-image {
+        width: 100px;
+        height: auto;
+        border: 2px solid #333; */
+        /* Add your other styles here */
+    /* } */
+    
+
+    /* #img3{
+      width: 170px;
+      height: 300px;
+      border: 4px solid #333; */  */
+
+    /* } */
+
+
+
+
+/* .styled-image {
+  width: 200px;
+  height: auto; This ensures the aspect ratio is maintained */
+  /* border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+} */
+.styled-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
