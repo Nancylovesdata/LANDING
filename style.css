@@ -92,7 +92,7 @@ border-bottom: 2px solid blueviolet;
 
 .header-text{
   text-align: center;
-  color: #3cb0fd;
+  color: #f9fbfc;
   padding:120px  0 30px 0;
   width: 50%;
   margin: auto;
@@ -141,7 +141,7 @@ background-size: cover; */
   background-color: peachpuff;
   display: flex;
   margin: 0;
-  padding: 0;
+  padding: 2.25px 0px 3.5px 0px;
 
 }
 
