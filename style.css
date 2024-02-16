@@ -134,20 +134,25 @@ height: 100vh;
 background-size: cover; */
 
 .new-item{
-  display: flex;
-  align-items: center;
+ 
+  
   width: 100%;
-  margin:auto;
+  /* margin:auto; */
   background-color: peachpuff;
+  display: flex;
+  margin: 0;
+  padding: 0;
+
 }
 
 .new-item-text{
-  padding: 50px;
+  padding: 45px 50px;
   color: red;
+
 }
 
 .text{
-  text-align: rigt;
+  text-align: left;
   padding: 10px 0;
 }
 
@@ -162,7 +167,9 @@ img{
 }
 
 .img{
-  width: 70%
+  width: 70%;
+  height:200px;
+  
 }
 
 
@@ -177,18 +184,35 @@ img{
 
 .services{
 padding: 120px 30px;
+display: flex;
+gap: 20px;
+flex-direction: column;
 text-align: center;
-margin: auto;
+align-items: center;
+
 
 }
 
+.service-card p{
+  padding: 5px 20px;
+}
+
+.services h2{
+  /* font-style: italic; */
+  background-color: #043c8f;
+  width: 150px;
+  padding: 5px;
+  border-radius: 4px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
 
 
 .product-items{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 23px;
+    grid-column-gap: 15px;
     grid-row-gap: 19px;
     }
 
@@ -197,6 +221,38 @@ margin: auto;
       text-align: center;
       margin: auto;
       
+    
+      display: flex;
+      gap: 30px;
+      flex-direction: column;
+      align-items: center;
+
+      }
+
+
+      .product-card img{
+        width: 275px;
+        border-radius: 10px;
+        height: 172px;
+        transition:0.3s ease
+      }
+
+      .product-card{
+        transition: background 0.5s, transform 0.5s;
+      }
+
+     
+
+      .product-card:hover img{
+        transform:  translateY(-10px);
+        transform:scale(1.1);
+        cursor: pointer;
+      }
+
+      
+
+      .product-card p{
+        padding: 5px 20px;
       }
       
 
@@ -239,4 +295,57 @@ margin: auto;
 }
 
 
+.team-items{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 23px;
+  grid-row-gap: 0px;
+}
 
+
+.teams{
+  padding: 120px 30px;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap:20px ;
+  
+  }
+
+  .team-card img{
+    border-radius: 50%;
+    width: 200px;
+    height: 300px;
+ 
+  }
+  .team-card{
+    display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap:10px ;
+  margin-right:40px ;
+  }
+
+
+  .footer{
+    background-color: #1e2222;
+    padding: 20px 0;
+    color: white;   
+}
+
+.footer_txt{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer_txt span{
+    color: red;
+    border-radius: 0;
+    padding: 0;
+}
